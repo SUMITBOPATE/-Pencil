@@ -1,6 +1,15 @@
-import { useRef } from "react";
+/* eslint-disable react/prop-types */
+import { useRef, useState } from "react";
 import Card from "./Card";
 function Foreground() {
+
+
+  // const [cards,setCards]= useState();
+
+  // const handleSave = (newTask) => {
+  //   setCards([...cards, newTask]); // Add the new task to the cards array
+  //   closeModal(); // Close the modal
+  // };
 const ref= useRef(null);
   const data =[
     {desc : "Lorem dcnkdneknkdenk",
@@ -12,6 +21,16 @@ const ref= useRef(null);
   filesize:".9mb",
    close:true,
   tag:{isOpen:true,tagTitle:"Download Now",tagColor:"green"}
+},
+{desc : "Lorem dcnkdneknkdenk",
+filesize:".9mb",
+ close:true,
+tag:{isOpen:true,tagTitle:"Download Now",tagColor:"green"}
+},
+{desc : "Lorem dcnkdneknkdenk",
+filesize:".9mb",
+ close:true,
+tag:{isOpen:true,tagTitle:"Download Now",tagColor:"green"}
 }
   ] ;
 
